@@ -42,10 +42,10 @@
         </style>
         <link rel="stylesheet" type="text/css" href="/static/css/asc.css?dummy=1">
         <script type="text/javascript">
-            // if (!String.prototype.includes) {
-            //     // document.write("<script type=\"text/javascript\" src=\"https://polyfill.io/v3/polyfill.min.js?features=es2015%2CElement.prototype.remove\"><\/script>");
-            //     document.write("<script type=\"text/javascript\" src=\"/static/js/old-browser-polyfill.js?dummy=1\"><\/script>");
-            // }
+            if (!String.prototype.includes) {
+                // document.write("<script type=\"text/javascript\" src=\"https://polyfill.io/v3/polyfill.min.js?features=es2015%2CElement.prototype.remove\"><\/script>");
+                document.write("<script type=\"text/javascript\" src=\"/static/js/old-browser-polyfill.js?dummy=1\"><\/script>");
+            }
             var ASC = ASC || {};
             ASC.bundle_v = "1";
             ASC.edupage = "binomcapital";

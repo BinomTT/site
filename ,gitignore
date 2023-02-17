@@ -1,0 +1,8 @@
+__pycache__/
+__*
+__*/
+test*
+old*/
+*.bat
+files/timetable/*.xlsx
+files/index.html

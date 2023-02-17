@@ -37,7 +37,7 @@ jobs:
       - name: Get .XLSX files
         id: xlsx_files
         run: |
-          if find timetables/*.xlsx -quit &> /dev/null; then
+          if find files/timetables/*.xlsx -quit &> /dev/null; then
             echo "contains=true"
             echo "contains=true" >> $GITHUB_OUTPUT
           else

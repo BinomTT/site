@@ -43,7 +43,7 @@ jobs:
             echo "contains=false" >> $GITHUB_OUTPUT
           fi
       - name: Install Python dependencies to parse .XLSX files
-        if: steps.xlsx_files.outputs.contains == "true"
+        if: steps.xlsx_files.outputs.contains == 'true'
         run: |
           python -m pip install git+https://github.com/BinomTT/edu-xlsx@v1.0
       - name: Run script

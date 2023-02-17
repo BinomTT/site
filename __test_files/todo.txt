@@ -1,3 +1,0 @@
-TODO:
-- /timetable/list.json (ttviewer.js)
-- /timetable/1.json (regulartt.js)

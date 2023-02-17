@@ -47,7 +47,7 @@ jobs:
       - name: Install Python dependencies to parse .XLSX files
         if: ${{ steps.xlsx_files.outputs.contains == 'true' }}
         run: |
-          python -m pip install git+https://github.com/BinomTT/edu-xlsx@v1.0
+          python -m pip install git+https://github.com/BinomTT/edu-xlsx@v1.0.1
       - name: Run script
         run: python main.py
       - name: Push changes

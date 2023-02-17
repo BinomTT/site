@@ -38,8 +38,10 @@ jobs:
         id: xlsx_files
         run: |
           if find timetables/*.xlsx -quit &> /dev/null; then
+            echo "contains=true"
             echo "contains=true" >> $GITHUB_OUTPUT
           else
+            echo "contains=false"
             echo "contains=false" >> $GITHUB_OUTPUT
           fi
       - name: Install Python dependencies to parse .XLSX files

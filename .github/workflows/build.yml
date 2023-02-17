@@ -19,7 +19,11 @@ jobs:
         uses: actions/github-script@v3
         with:
           script: |
-            const author = context.payload.head_commit.author.username
+            if (context.payload.head_commit) {
+              const author = context.payload.head_commit.author.username
+            } else {
+              const author = ""
+            }
             if (author == "github-actions[bot]") {
               core.setFailed("Commit author is GitHub Actions")
             }

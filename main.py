@@ -63,8 +63,14 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
 
     xlsx_parser.parse()
 
+    json_filepath: Path = timetable_path.parent / "{}.json".format(timetable_number)
+
+    json_filepath.unlink(
+        missing_ok = True
+    )
+
     xlsx_parser.save(
-        json_filepath = timetable_path.parent / "{}.json".format(timetable_number),
+        json_filepath = json_filepath,
         json_indent = None
     )
 

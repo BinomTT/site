@@ -75,7 +75,7 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
         json_indent = None
     )
 
-    timetable_path.unlink()
+    # timetable_path.unlink() # TODO: add
 
 
 for timetable_path in TIMETABLE_FILES_PATH.rglob("*.json"):

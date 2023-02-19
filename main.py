@@ -38,6 +38,10 @@ for file_path in FILES_PATH.rglob(""):
     encoding = ENCODING
 )
 
+# TODO: remove
+for file_path in FILES_PATH.rglob(""):
+    print(file_path.resolve())
+
 
 TIMETABLE_FILES_PATH: Path = FILES_PATH / "timetable"
 

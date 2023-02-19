@@ -1,6 +1,7 @@
 from pathlib import Path
 from jinja2 import Template
 from yaml import load as load_yaml, Loader
+from hashlib import md5
 from json import dumps as dumps_json
 
 from typing import Dict, Any, List
@@ -10,6 +11,7 @@ CURRENT_DIR: Path = Path(__file__).parent
 FILES_PATH: Path = CURRENT_DIR / "files"
 
 ENCODING: str = "utf-8"
+CHUNK_SIZE: int = 8192
 
 
 # TODO: dataclasses
@@ -75,7 +77,10 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
         json_indent = None
     )
 
-    # timetable_path.unlink() # TODO: add
+    timetable_path.unlink()
+
+
+timetable_hashes: List[str] = []
 
 
 for timetable_path in TIMETABLE_FILES_PATH.rglob("*.json"):
@@ -98,6 +103,14 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.json"):
         timetable_path.rename(timetable_json_path)
 
     timetable_numbers.append(timetable_number)
+
+    timetable_hash = md5()
+
+    with timetable_path.open("rb") as file:
+        while chunk := file.read(8192):
+            timetable_hash.update(chunk)
+
+    timetable_hashes.append(timetable_hash.hexdigest())
 
 
 if not timetable_numbers:
@@ -125,9 +138,10 @@ if not timetable_numbers:
                             "year": site_config["year"],
                             "text": site_config["timetables"][timetable_number]["text"],
                             "datefrom": site_config["timetables"][timetable_number]["datefrom"],
+                            "hash": timetable_hashes[index],
                             "hidden": False
                         }
-                        for timetable_number in timetable_numbers
+                        for index, timetable_number in enumerate(timetable_numbers, 0)
                     ]
                 },
                 "_changeEvents": {

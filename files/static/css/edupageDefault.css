@@ -6233,7 +6233,7 @@ ul.dz-chceckList li.checked{
 	background-color: rgba(0,0,0,0.05);
 }
 
-.eu-cookie-panel {
+.note-panel {
 	position: fixed;
 	right: 15px;
 	bottom: 15px;
@@ -6245,7 +6245,7 @@ ul.dz-chceckList li.checked{
 	box-shadow: 2px 2px 5px rgba(0,0,0,0.35);
 }
 
-.eu-cookie-panel a[href] {
+.note-panel a[href] {
 	color: inherit;
 	cursor: pointer;
 	text-decoration: underline;

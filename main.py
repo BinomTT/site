@@ -7,8 +7,8 @@ from json import dumps as dumps_json
 from typing import Dict, Any, List
 
 
-CURRENT_DIR: Path = Path(__file__).parent
-FILES_PATH: Path = CURRENT_DIR / "files"
+WORKING_PATH: Path = Path(__file__).parent
+FILES_PATH: Path = WORKING_PATH / "files"
 
 ENCODING: str = "utf-8"
 CHUNK_SIZE: int = 8192
@@ -16,16 +16,17 @@ CHUNK_SIZE: int = 8192
 
 # TODO: dataclasses
 site_config: Dict[str, Any] = load_yaml(
-    stream = (CURRENT_DIR / "site_config.yml").read_text(
+    stream = (WORKING_PATH / "site_config.yml").read_text(
         encoding = ENCODING
     ),
     Loader = Loader
 )
 
 
-(CURRENT_DIR / "template.html").write_text(
+
+(FILES_PATH / "index.html").write_text(
     data = Template(
-        source = (FILES_PATH / "index.html").read_text(
+        source = (WORKING_PATH / "template.html").read_text(
             encoding = ENCODING
         )
     ).render(

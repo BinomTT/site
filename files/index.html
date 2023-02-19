@@ -120,6 +120,39 @@
                                         });
                                     });
                                 </script>
+                                <script type="text/javascript">
+                                    window.note_name = "note_1_accepted";
+
+                                    $j(document).ready(function($) {
+                                        const accepted = localStorage.getItem(window.note_name) || sessionStorage.getItem(window.note_name);
+
+                                        // if (!(localStorage.getItem(window.note_name) || sessionStorage.getItem(window.note_name))) {
+                                            var s = "<div class=\"note-panel\" style=\"white-space:pre-wrap\">";
+                                            s += "Сделано с ❤ от Арына\n";
+                                            s += "Контакты:\n";
+                                            s += "- Telegram:\n";
+                                            s += "-- <a href=\"https://t.me/aryn_me\">Личный</a>\n";
+                                            s += "-- <a href=\"https://t.me/aryn_dev\">Канал о разработках</a>\n";
+                                            s += "-- <a href=\"https://t.me/binomtt\">Канал проекта расписаний</a>\n";
+                                            s += "<div style=\"text-align: right;margin-top: 10px;\"><a class=\"flat-button flat-button-greend note-closeBtn\" tabindex=\"1\">" + lset(1573) + "</a></div></div>";
+
+                                            var elem = $(s).prependTo($("body"));
+
+                                            elem.find(".note-closeBtn").click(function() {
+                                                localStorage.setItem(window.note_name, "1");
+                                                sessionStorage.setItem(window.note_name, "1");
+                                                elem.fadeOut("fast", function() {
+                                                    elem.remove();
+                                                });
+                                            }).on("keypress", function(e) {
+                                                if (e.which == 13) {
+                                                    $(this).click();
+                                                    return false;
+                                                }
+                                            })
+                                        // }
+                                    });
+                                </script>
                             </div>
                         </div>
                     </div>

@@ -41,7 +41,7 @@ for file_path in FILES_PATH.rglob(""):
 # TODO: remove
 for file_path in FILES_PATH.rglob(""):
     print(file_path.resolve())
-
+print((FILES_PATH / "index.html").read_text(encoding=ENCODING))
 
 TIMETABLE_FILES_PATH: Path = FILES_PATH / "timetable"
 

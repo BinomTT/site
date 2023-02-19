@@ -1,0 +1,163 @@
+<!DOCTYPE html>		
+<!--[if lte IE 8]>              <html class="ie8 no-js" lang="ru">     <![endif]-->
+<!--[if IE 9]>					<html class="ie9 no-js" lang="ru">     <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->	<html class="not-ie no-js" lang="ru">  <!--<![endif]-->
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <link rel="shortcut icon" href="/static/pics/favicon.ico">
+        <title>Расписание | Binom-School Tanym, 38-улица 9/5, Астана</title>
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css?v=1">
+        <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui-1.12.1.css?v=1" />
+        <link rel="stylesheet" type="text/css" href="/static/css/edupageDefault.css?v=1" />
+        <script type="text/javascript" src="/static/js/jquery-3.6.0.min.js?v=1"></script>
+        <script type="text/javascript" src="/static/js/jquery-migrate-3.4.0.min.js?v=1"></script>
+        <script>jQuery.migrateEnablePatches("self-closed-tags");</script>
+        <script type="text/javascript" src="/static/js/jquery-ui-1.12.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/lang_ru.js?v=1"></script>
+        <script src="/static/js/edubarUtils.js?v=1" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+        <meta name="referrer" content="origin">
+        <link rel="stylesheet" href="/static/css/layoutDefault.css?v=1">
+        <link rel="stylesheet" href="/static/css/skin.css?v=1" id="cssFor_skin">
+        <!-- TODO: remove --> <style type="text/css" id="mainCssStyle"></style>
+        <script type="text/javascript" src="/static/js/skinResponsiveScripts.js?v=1"></script>
+        <link href="/static/css/Open_Sans_font.css?v=1" type="text/css" rel="stylesheet"/>
+        <link href="/static/css/Comfortaa_font.css?v=1" type="text/css" rel="stylesheet"/>
+        <style type="text/css">
+            .g_skincolors .asc-dt th, .g_skincolors .asc-dt th a {
+                background-color: #2196F3;
+                color: #111111;
+            }
+            .g_skincolors .asc-dt table tr.rec:nth-child(even) {
+                background-color: #ebf6ff;
+                color: #000000;
+            }
+            .g_skincolors .asc-dt table tr.rec:nth-child(odd) {
+                background-color: #d7edff;
+                color: #000000;
+            }
+            .g_skincolors table.asc-timetable caption {
+                color: #000000;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="/static/css/asc.css?dummy=1">
+        <script type="text/javascript">
+            if (!String.prototype.includes) {
+                // document.write("<script type=\"text/javascript\" src=\"https://polyfill.io/v3/polyfill.min.js?features=es2015%2CElement.prototype.remove\"><\/script>");
+                document.write("<script type=\"text/javascript\" src=\"/static/js/old-browser-polyfill.js?dummy=1\"><\/script>");
+            }
+            var ASC = ASC || {};
+            ASC.bundle_v = "1";
+            ASC.edupage = "binomcapital";
+            ASC.server = "edupage";
+            ASC.school_name = "Binom-School Tanym, 38-улица 9/5, Астана";
+            ASC.lang = "ru";
+            ASC.school_country = "kz";
+            ASC.schoolyear_turnover = "08-01";
+            ASC.sort_name_col = "LSF";
+            ASC.browser = "firefox";
+            ASC.gsechash = "00000000";
+            ASC.firstDayOfWeek = 1;
+            ASC.req_props = {
+                edupage: ASC.edupage,
+                lang: ASC.lang,
+                school_name: ASC.school_name,
+                school_country: ASC.school_country,
+                school_state: "",
+                schoolyear_turnover: ASC.schoolyear_turnover,
+                custom_turnover: [],
+                firstDayOfWeek: ASC.firstDayOfWeek,
+                weekendDays: [
+                    0,
+                    6
+                ],
+                timezone: "Asia/Almaty",
+                sort_name_col: "LSF",
+                dtFormats: {
+                    date: "dd.mm.yy",
+                    time: "24"
+                },
+                jsmodulemode: "bundled",
+                loggedUser: "",
+                loggedUserRights: []
+            };
+            ASC.rtl = function (ltr, rtl) {return ltr;};
+            ASC.timezone_isWeekend_day = function(d) {
+                switch (d) {
+                    case 0: return true;
+                    case 6: return true;
+                }
+                return false;
+            };
+            ASC.timezone_firstDayOfWeek = function () {return 1;};
+        </script>
+        <script type="text/javascript" src="/static/js/bundle_main.min.js?dummy=1"></script>
+        <script type="text/javascript">
+            $j.holdReady(true);
+            ASC.requireAsync("/asc/edurequest.js").then(function(){$j.holdReady(false)});
+        </script>
+    </head>
+    <body id="docbody" class="   ">
+        <div class="topDiv">
+            <div class="edubarMainSkin nowmaxL">
+                <div class="skgd composite sgmain" id="skin_main" data-sgid="skin_main" data-templateid="skin" data-randid="skin_main-84640">
+                    <ul class="skip-links">
+                        <li><a href="#skin_PageContent_2">Содержание</a></li>
+                    </ul>
+                    <div class="skgd composite" id="skin_Div_1" data-sgid="skin_Div_1">
+                        <div class="skgd composite skgdContainer" id="skin_Container_2" data-sgid="skin_Container_2">
+                            <div class="skgd" id="skin_PageContent_2" data-sgid="skin_PageContent_2">
+                                <div id="timetable_content"></div>
+                                <script type="text/javascript">
+                                    $j(function () {
+                                        ASC.loadBundle("ttviewer");
+                                        ASC.requireAsync("/asc/asc_react").then(function (a) {
+                                            a.renderRootComponent(
+                                                document.getElementById("timetable_content"),
+                                                "/timetable/ttviewer.js#TTViewer",
+                                                {fitheight: true}
+                                            );
+                                        });
+                                    });
+                                </script>
+                                <script type="text/javascript">
+                                    window.note_name = "note_1_accepted";
+
+                                    $j(document).ready(function($) {
+                                        const accepted = localStorage.getItem(window.note_name) || sessionStorage.getItem(window.note_name);
+
+                                        // if (!(localStorage.getItem(window.note_name) || sessionStorage.getItem(window.note_name))) {
+                                            var s = "<div class=\"note-panel\" style=\"white-space:pre-wrap\">";
+                                            s += "Сделано с ❤ от Арына\n";
+                                            s += "Контакты:\n";
+                                            s += "- Telegram:\n";
+                                            s += "-- <a href=\"https://t.me/arynme\">Личный</a>\n";
+                                            s += "-- <a href=\"https://t.me/aryn_dev\">Канал о разработках</a>\n";
+                                            s += "-- <a href=\"https://t.me/binomtt\">Канал проекта расписаний</a>\n";
+                                            s += "<div style=\"text-align: right;margin-top: 10px;\"><a class=\"flat-button flat-button-greend note-closeBtn\" tabindex=\"1\">" + lset(1573) + "</a></div></div>";
+
+                                            var elem = $(s).prependTo($("body"));
+
+                                            elem.find(".note-closeBtn").click(function() {
+                                                localStorage.setItem(window.note_name, "1");
+                                                sessionStorage.setItem(window.note_name, "1");
+                                                elem.fadeOut("fast", function() {
+                                                    elem.remove();
+                                                });
+                                            }).on("keypress", function(e) {
+                                                if (e.which == 13) {
+                                                    $(this).click();
+                                                    return false;
+                                                }
+                                            })
+                                        // }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

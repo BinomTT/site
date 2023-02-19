@@ -23,6 +23,9 @@ site_config: Dict[str, Any] = load_yaml(
 )
 
 
+# TODO: remove
+for file_path in FILES_PATH.rglob(""):
+    print(file_path.resolve())
 
 (FILES_PATH / "index.html").write_text(
     data = Template(

@@ -23,10 +23,6 @@ site_config: Dict[str, Any] = load_yaml(
 )
 
 
-# TODO: remove
-for file_path in FILES_PATH.rglob(""):
-    print(file_path.resolve())
-
 (FILES_PATH / "index.html").write_text(
     data = Template(
         source = (WORKING_PATH / "template.html").read_text(
@@ -38,10 +34,6 @@ for file_path in FILES_PATH.rglob(""):
     encoding = ENCODING
 )
 
-# TODO: remove
-for file_path in FILES_PATH.rglob(""):
-    print(file_path.resolve())
-print((FILES_PATH / "index.html").read_text(encoding=ENCODING))
 
 TIMETABLE_FILES_PATH: Path = FILES_PATH / "timetable"
 

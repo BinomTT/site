@@ -107,7 +107,12 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.json"):
     timetable_hash = md5()
 
     with timetable_path.open("rb") as file:
-        while chunk := file.read(8192):
+        while True:
+            chunk: bytes = file.read(CHUNK_SIZE)
+
+            if not chunk:
+                break
+
             timetable_hash.update(chunk)
 
     timetable_hashes.append(timetable_hash.hexdigest())

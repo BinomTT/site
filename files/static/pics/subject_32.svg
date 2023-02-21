@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve" width="32px" height="32px">
+<g>
+	<path style="fill:#8BB7F0;" d="M6.5,37.5v-35H35c0.275,0,0.5,0.224,0.5,0.5v34c0,0.276-0.225,0.5-0.5,0.5H6.5z"/>
+	<g>
+		<path style="fill:#4E7AB5;" d="M35,3v34H7V3H35 M35,2H6v36h29c0.552,0,1-0.448,1-1V3C36,2.448,35.552,2,35,2L35,2z"/>
+	</g>
+</g>
+<g>
+	<path style="fill:#4E7AB5;" d="M9,38H5c-0.552,0-1-0.448-1-1V3c0-0.552,0.448-1,1-1h4V38z"/>
+</g>
+<rect x="14" y="10" style="fill:#FFFFFF;" width="15" height="10"/>
+<rect x="16" y="13" style="fill:#B0C1D4;" width="11" height="1"/>
+<rect x="16" y="16" style="fill:#B0C1D4;" width="11" height="1"/>
+<script xmlns="">{
+            document.currentScript.dataset.injected = true;
+            const o = JSON.parse(decodeURIComponent(escape(atob('eyJ1c2VyQWdlbnQiOiJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgOTsgQVNVU19YMDBURDsgRmxvdykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzM1OS4wLjAuMjg4IE1vYmlsZSBTYWZhcmkvNTM3LjM2IiwiYXBwVmVyc2lvbiI6IjUuMCAoTGludXg7IEFuZHJvaWQgOTsgQVNVU19YMDBURDsgRmxvdykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzM1OS4wLjAuMjg4IE1vYmlsZSBTYWZhcmkvNTM3LjM2IiwicGxhdGZvcm0iOiJBbmRyb2lkIiwidmVuZG9yIjoiR29vZ2xlIEluYy4iLCJwcm9kdWN0IjoiR2Vja28iLCJvc2NwdSI6IltkZWxldGVdIiwiYnVpbGRJRCI6IltkZWxldGVdIiwicHJvZHVjdFN1YiI6IjIwMDMwMTA3IiwidXNlckFnZW50RGF0YUJ1aWxkZXIiOnsicCI6eyJ1YSI6Ik1vemlsbGEvNS4wIChMaW51eDsgQW5kcm9pZCA5OyBBU1VTX1gwMFREOyBGbG93KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMzU5LjAuMC4yODggTW9iaWxlIFNhZmFyaS81MzcuMzYiLCJicm93c2VyIjp7Im5hbWUiOiJDaHJvbWUiLCJ2ZXJzaW9uIjoiMzU5LjAuMC4yODgiLCJtYWpvciI6IjM1OSJ9LCJlbmdpbmUiOnsibmFtZSI6IkJsaW5rIiwidmVyc2lvbiI6IjM1OS4wLjAuMjg4In0sIm9zIjp7Im5hbWUiOiJBbmRyb2lkIiwidmVyc2lvbiI6IjkifSwiZGV2aWNlIjp7InZlbmRvciI6IkFTVVMiLCJtb2RlbCI6IlgwMFREIiwidHlwZSI6Im1vYmlsZSJ9LCJjcHUiOnt9fSwidWEiOiJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgOTsgQVNVU19YMDBURDsgRmxvdykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzM1OS4wLjAuMjg4IE1vYmlsZSBTYWZhcmkvNTM3LjM2In19'))));
+
+            if (o.userAgentDataBuilder) {
+              const v = new class NavigatorUAData {
+                #p;
+
+                constructor({p, ua}) {
+                  this.#p = p;
+
+                  const version = p.browser.major;
+                  const name = p.browser.name === 'Chrome' ? 'Google Chrome' : p.browser.name;
+
+                  this.brands = [{
+                    brand: name,
+                    version
+                  }, {
+                    brand: 'Chromium',
+                    version
+                  }, {
+                    brand: 'Not=A?Brand',
+                    version: '24'
+                  }];
+
+                  this.mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+
+                  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform
+                  this.platform = 'Unknown';
+                  if (p.os &amp;&amp; p.os.name) {
+                    const name = p.os.name.toLowerCase();
+                    if (name.includes('mac')) {
+                      this.platform = 'macOS';
+                    }
+                    else if (name.includes('debian')) {
+                      this.platform = 'Linux';
+                    }
+                    else {
+                      this.platform = p.os.name;
+                    }
+                  }
+                }
+                toJSON() {
+                  return {
+                    brands: this.brands,
+                    mobile: this.mobile,
+                    platform: this.platform
+                  };
+                }
+                getHighEntropyValues(hints) {
+                  if (!hints || Array.isArray(hints) === false) {
+                    return Promise.reject(Error("Failed to execute 'getHighEntropyValues' on 'NavigatorUAData'"));
+                  }
+
+                  const r = this.toJSON();
+
+                  if (hints.includes('architecture')) {
+                    r.architecture = this.#p?.cpu?.architecture || 'x86';
+                  }
+                  if (hints.includes('bitness')) {
+                    r.bitness = '64';
+                  }
+                  if (hints.includes('model')) {
+                    r.model = '';
+                  }
+                  if (hints.includes('platformVersion')) {
+                    r.platformVersion = this.#p?.os?.version || '10.0.0';
+                  }
+                  if (hints.includes('uaFullVersion')) {
+                    r.uaFullVersion = this.brands[0].version;
+                  }
+                  if (hints.includes('fullVersionList')) {
+                    r.fullVersionList = this.brands;
+                  }
+                  return Promise.resolve(r);
+                }
+              }(o.userAgentDataBuilder);
+
+              navigator.__defineGetter__('userAgentData', () =&gt; {
+                return v;
+              });
+            }
+            delete o.userAgentDataBuilder;
+
+            for (const key of Object.keys(o)) {
+              if (o[key] === '[delete]') {
+                delete Object.getPrototypeOf(window.navigator)[key];
+              }
+              else {
+                navigator.__defineGetter__(key, () =&gt; {
+                  if (o[key] === 'empty') {
+                    return '';
+                  }
+                  return o[key];
+                });
+              }
+            }
+          }</script></svg>

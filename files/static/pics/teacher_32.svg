@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 252 252" width="32px" height="32px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none"/><g id="Layer_1"><g><path d="M7.4466,102.8979l118.5534,-55.3203l118.5534,55.3203l-118.5534,55.3266z" fill="#333333"/><path d="M126,51.0552l111.1005,51.849l-111.1005,51.8427l-111.1005,-51.849l111.1005,-51.8427M126,44.1l-126,58.7979l126,58.7979l126,-58.7979l-126,-58.7979z" fill="#000000"/></g><g><path d="M59.85,154.35v-47.25c0,-6.426 25.767,-15.75 66.15,-15.75c40.383,0 66.15,9.324 66.15,15.75v47.25z" fill="#333333"/><g fill="#000000"><path d="M126,94.5c38.0709,0 61.2801,8.379 63,12.6v44.1h-126.0063l-0.0315,-43.8354c1.7577,-4.4856 24.9669,-12.8646 63.0378,-12.8646M126,88.2c-38.2725,0 -69.3,8.4609 -69.3,18.9c0,3.4461 0,46.9539 0,50.4h138.6c0,-3.4461 0,-46.9539 0,-50.4c0,-10.4391 -31.0275,-18.9 -69.3,-18.9z"/></g></g><path d="M31.5,189h-6.3c0,0 0,-90.9783 0,-97.6563c0,-5.5188 6.3,-5.7456 6.3,-2.9295c0,3.1248 0,100.5858 0,100.5858z" fill="#a16a4a"/><g><path d="M28.35,224.0532c-5.7141,-11.5101 -12.6,-26.9766 -12.6,-31.9032c0,-6.9489 5.6511,-12.6 12.6,-12.6c6.9489,0 12.6,5.6511 12.6,12.6c0,4.9266 -6.8859,20.3931 -12.6,31.9032z" fill="#ffc49c"/><path d="M28.35,182.7c5.2101,0 9.45,4.2399 9.45,9.45c0,3.2697 -4.284,13.8285 -9.45,24.7086c-5.166,-10.8801 -9.45,-21.4326 -9.45,-24.7086c0,-5.2101 4.2399,-9.45 9.45,-9.45M28.35,176.4c-8.7003,0 -15.75,7.0497 -15.75,15.75c0,8.7003 15.75,38.8521 15.75,38.8521c0,0 15.75,-30.1518 15.75,-38.8521c0,-8.7003 -7.0497,-15.75 -15.75,-15.75z" fill="#a16a4a"/></g><g fill="#000000"><ellipse cx="20" cy="25" transform="scale(6.3,6.3)" rx="11" ry="3"/></g></g></g><script xmlns="">{
+            document.currentScript.dataset.injected = true;
+            const o = JSON.parse(decodeURIComponent(escape(atob('eyJ1c2VyQWdlbnQiOiJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgOTsgQVNVU19YMDBURDsgRmxvdykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzM1OS4wLjAuMjg4IE1vYmlsZSBTYWZhcmkvNTM3LjM2IiwiYXBwVmVyc2lvbiI6IjUuMCAoTGludXg7IEFuZHJvaWQgOTsgQVNVU19YMDBURDsgRmxvdykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzM1OS4wLjAuMjg4IE1vYmlsZSBTYWZhcmkvNTM3LjM2IiwicGxhdGZvcm0iOiJBbmRyb2lkIiwidmVuZG9yIjoiR29vZ2xlIEluYy4iLCJwcm9kdWN0IjoiR2Vja28iLCJvc2NwdSI6IltkZWxldGVdIiwiYnVpbGRJRCI6IltkZWxldGVdIiwicHJvZHVjdFN1YiI6IjIwMDMwMTA3IiwidXNlckFnZW50RGF0YUJ1aWxkZXIiOnsicCI6eyJ1YSI6Ik1vemlsbGEvNS4wIChMaW51eDsgQW5kcm9pZCA5OyBBU1VTX1gwMFREOyBGbG93KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMzU5LjAuMC4yODggTW9iaWxlIFNhZmFyaS81MzcuMzYiLCJicm93c2VyIjp7Im5hbWUiOiJDaHJvbWUiLCJ2ZXJzaW9uIjoiMzU5LjAuMC4yODgiLCJtYWpvciI6IjM1OSJ9LCJlbmdpbmUiOnsibmFtZSI6IkJsaW5rIiwidmVyc2lvbiI6IjM1OS4wLjAuMjg4In0sIm9zIjp7Im5hbWUiOiJBbmRyb2lkIiwidmVyc2lvbiI6IjkifSwiZGV2aWNlIjp7InZlbmRvciI6IkFTVVMiLCJtb2RlbCI6IlgwMFREIiwidHlwZSI6Im1vYmlsZSJ9LCJjcHUiOnt9fSwidWEiOiJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgOTsgQVNVU19YMDBURDsgRmxvdykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzM1OS4wLjAuMjg4IE1vYmlsZSBTYWZhcmkvNTM3LjM2In19'))));
+
+            if (o.userAgentDataBuilder) {
+              const v = new class NavigatorUAData {
+                #p;
+
+                constructor({p, ua}) {
+                  this.#p = p;
+
+                  const version = p.browser.major;
+                  const name = p.browser.name === 'Chrome' ? 'Google Chrome' : p.browser.name;
+
+                  this.brands = [{
+                    brand: name,
+                    version
+                  }, {
+                    brand: 'Chromium',
+                    version
+                  }, {
+                    brand: 'Not=A?Brand',
+                    version: '24'
+                  }];
+
+                  this.mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+
+                  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform
+                  this.platform = 'Unknown';
+                  if (p.os &amp;&amp; p.os.name) {
+                    const name = p.os.name.toLowerCase();
+                    if (name.includes('mac')) {
+                      this.platform = 'macOS';
+                    }
+                    else if (name.includes('debian')) {
+                      this.platform = 'Linux';
+                    }
+                    else {
+                      this.platform = p.os.name;
+                    }
+                  }
+                }
+                toJSON() {
+                  return {
+                    brands: this.brands,
+                    mobile: this.mobile,
+                    platform: this.platform
+                  };
+                }
+                getHighEntropyValues(hints) {
+                  if (!hints || Array.isArray(hints) === false) {
+                    return Promise.reject(Error("Failed to execute 'getHighEntropyValues' on 'NavigatorUAData'"));
+                  }
+
+                  const r = this.toJSON();
+
+                  if (hints.includes('architecture')) {
+                    r.architecture = this.#p?.cpu?.architecture || 'x86';
+                  }
+                  if (hints.includes('bitness')) {
+                    r.bitness = '64';
+                  }
+                  if (hints.includes('model')) {
+                    r.model = '';
+                  }
+                  if (hints.includes('platformVersion')) {
+                    r.platformVersion = this.#p?.os?.version || '10.0.0';
+                  }
+                  if (hints.includes('uaFullVersion')) {
+                    r.uaFullVersion = this.brands[0].version;
+                  }
+                  if (hints.includes('fullVersionList')) {
+                    r.fullVersionList = this.brands;
+                  }
+                  return Promise.resolve(r);
+                }
+              }(o.userAgentDataBuilder);
+
+              navigator.__defineGetter__('userAgentData', () =&gt; {
+                return v;
+              });
+            }
+            delete o.userAgentDataBuilder;
+
+            for (const key of Object.keys(o)) {
+              if (o[key] === '[delete]') {
+                delete Object.getPrototypeOf(window.navigator)[key];
+              }
+              else {
+                navigator.__defineGetter__(key, () =&gt; {
+                  if (o[key] === 'empty') {
+                    return '';
+                  }
+                  return o[key];
+                });
+              }
+            }
+          }</script></svg>

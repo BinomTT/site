@@ -4,6 +4,8 @@ from yaml import load as load_yaml, Loader
 from hashlib import md5
 from json import dumps as dumps_json
 
+from utils import get_filename_without_ext, extract_timetable_number
+
 from typing import Dict, Any, List
 
 
@@ -46,8 +48,13 @@ timetable_number: str
 timetable_json_filename: str
 
 for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
-    timetable_filename = timetable_path.name.split(".")[0]
-    timetable_number = timetable_filename.split("_")[-1]
+    timetable_filename = get_filename_without_ext(
+        filepath = timetable_path
+    )
+
+    timetable_number = extract_timetable_number(
+        filename = timetable_filename
+    )
 
     if timetable_number not in site_config["timetables"]:
         raise SystemExit(
@@ -56,7 +63,10 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
             )
         )
 
-    from edu_xlsx import XLSXParser
+    if "temp" in timetable_filename:
+        from edu_xlsx import TempXLSXParser as XLSXParser
+    else:
+        from edu_xlsx import XLSXParser
 
     xlsx_parser: XLSXParser = XLSXParser(
         xlsx_filepath = timetable_path,
@@ -67,10 +77,9 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
 
     json_filepath: Path = timetable_path.parent / "{}.json".format(timetable_number)
 
-    try:
-        json_filepath.unlink()
-    except:
-        pass
+    json_filepath.unlink(
+        missing_ok = True
+    )
 
     xlsx_parser.save(
         json_filepath = json_filepath,
@@ -84,8 +93,13 @@ timetable_hashes: List[str] = []
 
 
 for timetable_path in TIMETABLE_FILES_PATH.rglob("*.json"):
-    timetable_filename = timetable_path.name.split(".")[0]
-    timetable_number = timetable_filename.split("_")[-1]
+    timetable_filename = get_filename_without_ext(
+        filepath = timetable_path
+    )
+
+    timetable_number = extract_timetable_number(
+        filename = timetable_filename
+    )
 
     if timetable_number == "list":
         continue

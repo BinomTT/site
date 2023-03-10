@@ -11,4 +11,4 @@ def get_filename_without_ext(filepath: Union[Path, str]) -> str:
 
 
 def extract_timetable_number(filename: str) -> str:
-    return filename.split("_")[-1]
+    return filename.split("_")[-1].split(".")[-2]

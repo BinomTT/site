@@ -1,5 +1,6 @@
 school_name: Binom-School Tanym, 38-улица 9/5, Астана
 year: 2022
+default_timetable: "1"
 timetables:
   "1":
     text: Сабақ кестесі 1-ауысым 4-тоқсан (2023.03.27 - 2023.05.31)

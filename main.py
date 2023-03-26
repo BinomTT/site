@@ -151,7 +151,7 @@ if not timetable_numbers:
                     "allow": False
                 },
                 "regular": {
-                    "default_num": list(site_config["timetables"].keys())[0],
+                    "default_num": site_config["default_timetable"],
                     "timetables": [
                         {
                             "tt_num": timetable_number,

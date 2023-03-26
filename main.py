@@ -53,7 +53,7 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
     )
 
     timetable_number = extract_timetable_number(
-        filename = timetable_filename_no_ext
+        filename_no_ext = timetable_filename_no_ext
     )
 
     if timetable_number not in site_config["timetables"]:
@@ -99,7 +99,7 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.json"):
     )
 
     timetable_number = extract_timetable_number(
-        filename = timetable_filename_no_ext
+        filename_no_ext = timetable_filename_no_ext
     )
 
     if timetable_number == "list":

@@ -19,7 +19,7 @@ jobs:
         uses: actions/github-script@v3
         with:
           script: |
-            if (context.payload.head_commit & context.payload.head_commit.author.username == "github-actions[bot]") {
+            if (context.payload.head_commit !== undefined & context.payload.head_commit.author.username === "github-actions[bot]") {
               core.setFailed("Commit author is GitHub Actions")
             }
       - name: Checkout

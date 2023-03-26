@@ -1,6 +1,6 @@
 __pycache__/
 __*
 __*/
-test*
-old*/
+**test*
+**old*
 *.bat

@@ -43,17 +43,17 @@ TIMETABLE_FILES_PATH: Path = FILES_PATH / "timetable"
 timetable_numbers: List[str] = []
 
 timetable_path: Path
-timetable_filename: str
+timetable_filename_no_ext: str
 timetable_number: str
 timetable_json_filename: str
 
 for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
-    timetable_filename = get_filename_without_ext(
+    timetable_filename_no_ext = get_filename_without_ext(
         filepath = timetable_path
     )
 
     timetable_number = extract_timetable_number(
-        filename = timetable_filename
+        filename = timetable_filename_no_ext
     )
 
     if timetable_number not in site_config["timetables"]:
@@ -63,7 +63,7 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.xlsx"):
             )
         )
 
-    if "temp" in timetable_filename:
+    if "temp" in timetable_filename_no_ext:
         from edu_xlsx import TempXLSXParser as XLSXParser
     else:
         from edu_xlsx import XLSXParser
@@ -94,12 +94,12 @@ timetable_hashes: List[str] = []
 
 
 for timetable_path in TIMETABLE_FILES_PATH.rglob("*.json"):
-    timetable_filename = get_filename_without_ext(
+    timetable_filename_no_ext = get_filename_without_ext(
         filepath = timetable_path
     )
 
     timetable_number = extract_timetable_number(
-        filename = timetable_filename
+        filename = timetable_filename_no_ext
     )
 
     if timetable_number == "list":
@@ -114,7 +114,7 @@ for timetable_path in TIMETABLE_FILES_PATH.rglob("*.json"):
 
     timetable_json_path: Path = timetable_path.parent / "{}.json".format(timetable_number)
 
-    if timetable_filename != timetable_json_path:
+    if timetable_filename_no_ext != timetable_json_path:
         timetable_path.rename(timetable_json_path)
 
     timetable_numbers.append(timetable_number)
@@ -158,10 +158,10 @@ if not timetable_numbers:
                             "year": site_config["year"],
                             "text": site_config["timetables"][timetable_number]["text"],
                             "datefrom": site_config["timetables"][timetable_number]["datefrom"],
-                            "hash": timetable_hashes[index],
+                            "hash": timetable_hash,
                             "hidden": False
                         }
-                        for index, timetable_number in enumerate(timetable_numbers, 0)
+                        for timetable_number, timetable_hash in zip(timetable_numbers, timetable_hashes)
                     ]
                 },
                 "_changeEvents": {
